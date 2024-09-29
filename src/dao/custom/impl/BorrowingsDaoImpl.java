@@ -62,7 +62,7 @@ public class BorrowingsDaoImpl implements BorrowingsDao {
 
     @Override
     public BorrowingsEntity get(Integer id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
     
 }
