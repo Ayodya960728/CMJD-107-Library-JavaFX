@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="600.0" style="-fx-background-color: rgba(0, 206, 201,1.0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="3.0" prefHeight="46.0" prefWidth="591.0" text="WELLCOME TO LIBRARY MANAGEMENT SYSTEM" textFill="#220870" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="113.0" prefHeight="33.0" prefWidth="441.0" text="Email Address">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="82.0" layoutY="155.0" prefHeight="18.0" prefWidth="453.0" />
+      <Label layoutX="84.0" layoutY="205.0" prefHeight="33.0" prefWidth="441.0" text="Password">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="84.0" layoutY="245.0" prefHeight="25.0" prefWidth="453.0" />
+      <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="339.0" onAction="#btnLoginOnAction" prefHeight="71.0" prefWidth="107.0" style="-fx-background-color: rgba(41, 128, 185,1.0); -fx-background-radius: 20;" text="LOGIN">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="708.0" style="-fx-background-color: rgba(127, 143, 166,1.0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookController">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" prefHeight="39.0" prefWidth="600.0" text="Book Form">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="39.0" prefHeight="27.0" prefWidth="125.0" text="Book Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookId" layoutX="140.0" layoutY="40.0" prefHeight="25.0" prefWidth="99.0" promptText="Book Id" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="73.0" prefHeight="27.0" prefWidth="125.0" text="Book Title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookTitle" layoutX="140.0" layoutY="74.0" prefHeight="25.0" prefWidth="197.0" promptText="Book Title" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="108.0" prefHeight="27.0" prefWidth="125.0" text="Author">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="140.0" layoutY="109.0" prefHeight="25.0" prefWidth="244.0" promptText="Author" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="141.0" prefHeight="27.0" prefWidth="125.0" text="Publisher">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPublisher" layoutX="140.0" layoutY="142.0" prefHeight="25.0" prefWidth="391.0" promptText="Publisher" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="177.0" prefHeight="27.0" prefWidth="125.0" text="Year">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtYear" layoutX="140.0" layoutY="178.0" promptText="Year" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="211.0" prefHeight="27.0" prefWidth="125.0" text="Category_Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategory_Id" layoutX="140.0" layoutY="212.0" prefHeight="25.0" prefWidth="99.0" promptText="Category_Id" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <JFXButton buttonType="RAISED" layoutX="458.0" layoutY="253.0" onAction="#btnSaveOnAction" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Save">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="321.0" layoutY="253.0" onAction="#btnUpdateOnAction" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Update">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblBook" layoutX="13.0" layoutY="327.0" prefHeight="200.0" prefWidth="666.0" style="-fx-background-color: rgba(209, 204, 192,1.0);">
+        <columns>
+          <TableColumn fx:id="colBookId" minWidth="0.0" prefWidth="48.666659355163574" text="Book Id" />
+          <TableColumn fx:id="colBookTitle" minWidth="0.0" prefWidth="89.33333587646484" text="Book Title" />
+            <TableColumn fx:id="colAuthor" minWidth="0.0" prefWidth="111.33338928222656" text="Author" />
+            <TableColumn fx:id="colPublisher" minWidth="0.0" prefWidth="204.66668701171875" text="Publisher" />
+            <TableColumn fx:id="colYear" minWidth="0.0" prefWidth="39.99993896484375" text="Year" />
+            <TableColumn fx:id="colCategory_Id" minWidth="0.0" prefWidth="74.66659545898438" text="Category_Id" />
+            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="95.3333740234375" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="412.0" layoutY="546.0" onAction="#btnLoadAllBooksOnAction" prefHeight="54.0" prefWidth="237.0" style="-fx-background-color: rgba(26, 188, 156,1.0); -fx-background-radius: 20;" text="Load All Books">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

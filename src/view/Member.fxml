@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="600.0" style="-fx-background-color: rgba(127, 143, 166,1.0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemberController">
+   <children>
+      <Label alignment="CENTER" prefHeight="42.0" prefWidth="600.0" text="Member Form">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="46.0" prefHeight="29.0" prefWidth="105.0" text="Member Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMemberId" layoutX="120.0" layoutY="48.0" prefHeight="25.0" prefWidth="105.0" promptText="Member Id" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="13.0" layoutY="85.0" prefHeight="29.0" prefWidth="105.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="120.0" layoutY="87.0" prefHeight="25.0" prefWidth="167.0" promptText="Name" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="13.0" layoutY="130.0" prefHeight="29.0" prefWidth="105.0" text="Phone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhone" layoutX="120.0" layoutY="130.0" prefHeight="25.0" prefWidth="209.0" promptText="Phone" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="174.0" onAction="#btnSaveOnAction" prefHeight="54.0" prefWidth="137.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Save">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="287.0" layoutY="174.0" onAction="#btnUpdateOnAction" prefHeight="54.0" prefWidth="137.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Update">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblMember" layoutX="21.0" layoutY="249.0" prefHeight="243.0" prefWidth="562.0" style="-fx-background-color: rgba(209, 204, 192,1.0);">
+        <columns>
+          <TableColumn fx:id="colMemberId" prefWidth="101.99996948242188" text="Member Id" />
+          <TableColumn fx:id="colName" prefWidth="167.99996948242188" text="Name" />
+            <TableColumn fx:id="colPhone" prefWidth="172.6666259765625" text="Phone" />
+            <TableColumn fx:id="colAction" prefWidth="118.666748046875" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="520.0" onAction="#btnLoadAllMembersOnAction" prefHeight="54.0" prefWidth="268.0" style="-fx-background-color: rgba(26, 188, 156,1.0); -fx-background-radius: 20;" text="Load All Members">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

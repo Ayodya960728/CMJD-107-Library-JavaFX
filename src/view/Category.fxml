@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="600.0" style="-fx-background-color: rgba(127, 143, 166,1.0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoryController">
+   <children>
+      <Label alignment="CENTER" layoutY="-4.0" prefHeight="40.0" prefWidth="600.0" text="Category Form" textFill="#191618">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="47.0" prefHeight="32.0" prefWidth="121.0" text="Category ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategoryId" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="210.0" promptText="Category ID" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <Label layoutX="14.0" layoutY="117.0" prefHeight="25.0" prefWidth="154.0" text="Category Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategoryName" layoutX="17.0" layoutY="142.0" prefHeight="25.0" prefWidth="304.0" promptText="Category Name" style="-fx-background-color: rgba(209, 204, 192,1.0);" />
+      <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="537.0" onAction="#btnUpdateOnAction" prefHeight="51.0" prefWidth="121.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Update">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="91.0" layoutY="537.0" onAction="#btnSaveOnAction" prefHeight="51.0" prefWidth="121.0" style="-fx-background-color: rgba(116, 185, 255,1.0); -fx-background-radius: 20;" text="Save">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCategory" layoutX="23.0" layoutY="206.0" onMouseClicked="#tblCategoryOnMouseClicked" prefHeight="301.0" prefWidth="538.0" style="-fx-background-color: rgba(209, 204, 192,1.0);">
+        <columns>
+          <TableColumn fx:id="colCategoryID" prefWidth="126.66671752929688" text="Category ID" />
+            <TableColumn fx:id="colCategoryName" prefWidth="201.33340454101562" text="Category Name" />
+            <TableColumn fx:id="colAction" prefWidth="239.99993896484375" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="354.0" layoutY="537.0" onAction="#btnLoadAllCategoryOnAction" prefHeight="51.0" prefWidth="231.0" style="-fx-background-color: rgba(26, 188, 156,1.0); -fx-background-radius: 20;" text="Load All Category">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
